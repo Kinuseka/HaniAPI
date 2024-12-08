@@ -133,7 +133,7 @@ class Search(UserDict):
             pret.add_tab('',lines=longest)
         return pret.prettystring()
     
-    def result_title(self, data) -> Generator[dict, dict]:
+    def result_title(self, data) -> Generator[dict, dict, dict]:
         for each in data:
             yield each["name"]
     
@@ -181,7 +181,7 @@ class Homepage:
             pret.add_tab('',lines=longest)
         return pret.prettystring()
     
-    def result_title(self, data) -> Generator[dict]:
+    def result_title(self, data) -> Generator[dict, dict, dict]:
         for each in data:
             yield each["name"]
 
