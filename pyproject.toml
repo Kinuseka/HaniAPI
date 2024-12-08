@@ -40,7 +40,7 @@ dependencies = [
     "CFSession>=1.3.0",
     "beautifulsoup4>=4.10.0",
     "ffmpeg-python",
-    "git+https://github.com/globocom/m3u8.git",
+    "m3u8 @ git+https://github.com/globocom/m3u8.git",
     "pycryptodome",
     "python-dateutil"
 ]
